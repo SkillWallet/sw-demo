@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <skillwallet-auth communityAddress=''></skillwallet-auth>
+        <skillwallet-auth partner-key='d0aa09caba3ee6e60eb4b2724e9909df5328c599'></skillwallet-auth>
       </header>
     </div>
   );
