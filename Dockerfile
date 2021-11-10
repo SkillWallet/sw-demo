@@ -1,6 +1,7 @@
 FROM node:latest as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
+ENV NODE_OPTIONS=--openssl-legacy-provider
 
 COPY package.json ./
 COPY package-lock.json ./
