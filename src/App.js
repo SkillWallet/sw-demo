@@ -1,14 +1,16 @@
 import './App.css';
+import React from 'react';
 import { defineCustomElements } from "@skill-wallet/auth/loader";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <skillwallet-auth partner-key="d0aa09caba3ee6e60eb4b2724e9909df5328c599"></skillwallet-auth> */}
-        {/* <skillwallet-auth partner-key="b23ab97b164c9dd850d02380c1a20f3f659d0c4d"></skillwallet-auth> */}
-        <skillwallet-auth partner-key="6a918cdf9ae3d32131c779c22ae30290a2e729c3"></skillwallet-auth>
+
+        <skillwallet-auth partner-key="e045db0b7868a054e0e75b2013b0fc59f1fbe035"></skillwallet-auth>
+
       </header>
+
     </div>
   );
 }
