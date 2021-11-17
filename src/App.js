@@ -8,9 +8,6 @@ function App() {
 
   useState(() => {
 
-    // r = requests.post('%s/oauth2/token' % API_ENDPOINT, data=data, headers=headers)
-    // r.raise_for_status()
-    // return r.json()
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const code = urlParams.get('code');
@@ -38,10 +35,7 @@ function App() {
         },
         body: formBody
       })
-      // if (!response.ok) throw new Error(`Error status code: ${response.status}`)
 
-      // console.log(response.body);
-      // return JSON.parse(await response.json())
       const json = await response.json();
       const accessToken = json.access_token;
 
@@ -63,14 +57,11 @@ function App() {
   }, [])
 
 
-  const authorizeAccountLink = `https://discord.com/api/oauth2/authorize?client_id=898586559228551208&redirect_uri=http%3A%2F%2Flocalhost%3A3334&response_type=code&scope=identify`;
-  const discordTokenUrl = 'https://discord.com/api/oauth2/token'
   return (
     <div className="App">
       <header className="App-header">
-        {/* <button onClick={discordAuth}>Discord Auth</button> */}
         <a href="https://discord.com/api/oauth2/authorize?client_id=898586559228551208&redirect_uri=http%3A%2F%2Flocalhost%3A3334&response_type=code&scope=identify">discord auth</a>
-        {/* <skillwallet-auth partner-key="e045db0b7868a054e0e75b2013b0fc59f1fbe035"></skillwallet-auth> */}
+        <skillwallet-auth partner-key="e045db0b7868a054e0e75b2013b0fc59f1fbe035"></skillwallet-auth>
 
       </header>
 
