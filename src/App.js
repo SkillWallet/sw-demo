@@ -1,18 +1,15 @@
-import './App.css';
-import React from 'react';
-import { defineCustomElements } from "@skill-wallet/auth/loader";
-
+import "./App.css";
+import { InitSwAuth } from "@skill-wallet/auth";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    InitSwAuth();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <skillwallet-auth partner-key="e045db0b7868a054e0e75b2013b0fc59f1fbe035"></skillwallet-auth>
-
-      </header>
-
+    <div>
+      <sw-auth partner-key="877e55ee9cdcb52f0c170258eafaf64581eab9b3" use-dev='true'></sw-auth>
     </div>
   );
 }
-defineCustomElements(window);
 export default App;
