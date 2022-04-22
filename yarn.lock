@@ -1605,10 +1605,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@skill-wallet/auth@^1.0.50":
-  "integrity" "sha512-zEe0V6VuMjOHs/KE/RwlWZdDJswDoXhOvVl8dINSFEWP35YIdil0T1r3MxS5PebNvbOiT8x1u+YpbTtcqgUx2Q=="
-  "resolved" "https://registry.npmjs.org/@skill-wallet/auth/-/auth-1.0.50.tgz"
-  "version" "1.0.50"
+"@skill-wallet/auth@^1.0.63":
+  "integrity" "sha512-AVomWBPfMa6j7yNKE/gUQDdyGVAZW9s3DFGxI5z65+GN88f417tZtqyWDztn7IAd0nxwop4KT+RcTXoOFt47pA=="
+  "resolved" "https://registry.npmjs.org/@skill-wallet/auth/-/auth-1.0.63.tgz"
+  "version" "1.0.63"
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   "integrity" "sha512-yBMPqmd1yEJo/280PAMkychuaALyQ9Lkb5q1ck3mjJrFuEobIfhnQ4J3mbvBoISmR3SWMWV+cGB/I0lCQee79A=="
