@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-        <sw-auth partner-key="0772ffab1977b915c1a8bc8ea073c8bdbdecd71f" use-dev="true"></sw-auth>
+        <sw-auth partner-key="564b2ff84eea2cf4a789aa9fa7d6e668178bee51" use-dev="true"></sw-auth>
     </div>
   );
 }
